@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  ContinuousApp
 //
-//  Created by Paul Peelen on 2018-09-27.
 //  Copyright © 2018 AppTrix AB. All rights reserved.
 //
 
