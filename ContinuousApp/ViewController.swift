@@ -23,15 +23,15 @@ class ViewController: UIViewController {
   }
 
   private var users: [User] = []
-  private var dataBoss: DataBoss?
+  private var dataBoss: DataBoss
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     debugPrint("Hello!")
   }
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     self.dataBoss = DataBoss()
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
   }
 
   convenience init(dataBoss: DataBoss) {
@@ -40,8 +40,8 @@ class ViewController: UIViewController {
   }
 
   required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
     dataBoss = DataBoss()
+    super.init(coder: aDecoder)
   }
 
   override func viewDidLoad() {
